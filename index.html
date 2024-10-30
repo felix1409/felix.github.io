@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Spotify Felix</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-dark text-white">
+    <div class="container-fluid">
+      <!-- Header -->
+      <header class="d-flex justify-content-between align-items-center p-3">
+        <h1 class="text-success">Spotify Felix</h1>
+        <nav>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Search</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="row">
+        <!-- Sidebar -->
+        <aside class="col-3 p-3 bg-secondary text-light">
+          <h2 class="text-center">Playlists</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-secondary text-white">
+              <i class="fas fa-music me-2"></i> Chill Vibes
+            </li>
+            <li class="list-group-item bg-secondary text-white">
+              <i class="fas fa-music me-2"></i> Top Hits
+            </li>
+            <li class="list-group-item bg-secondary text-white">
+              <i class="fas fa-music me-2"></i> Workout Mix
+            </li>
+            <li class="list-group-item bg-secondary text-white">
+              <i class="fas fa-music me-2"></i> Party Playlist
+            </li>
+            <li class="list-group-item bg-secondary text-white">
+              <i class="fas fa-music me-2"></i> Mellow Beats
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Content Section -->
+        <section class="col-9 p-4">
+          <h2 class="text-center mb-4">Now Playing</h2>
+          <div class="card bg-dark border-secondary text-center mb-5">
+            <div class="card-body">
+              <img
+                src="img/begroundweb.jpg"
+                alt="Album Art"
+                class="img-fluid rounded mb-3"
+              />
+              <h5 class="card-title">Song Title</h5>
+              <p class="card-text">Artist Name</p>
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-success me-2" id="playButton">
+                  <i class="fas fa-play"></i> Play
+                </button>
+                <button class="btn btn-secondary" id="pauseButton">
+                  <i class="fas fa-pause"></i> Pause
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spotify Packages -->
+          <h2 class="text-center mb-4">Spotify Packages</h2>
+          <div class="row text-center">
+            <div class="col-md-4 mb-4">
+              <div class="card bg-secondary text-light border-0">
+                <div class="card-body">
+                  <h5 class="card-title">Premium</h5>
+                  <p class="card-text">
+                    Enjoy ad-free music, offline listening, and unlimited skips.
+                  </p>
+                  <p class="fw-bold">Rp 54,990/bulan</p>
+                  <button class="btn btn-primary">Subscribe</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card bg-secondary text-light border-0">
+                <div class="card-body">
+                  <h5 class="card-title">Premium Family</h5>
+                  <p class="card-text">
+                    Share your account with up to 5 family members.
+                  </p>
+                  <p class="fw-bold">Rp 89,990/bulan</p>
+                  <button class="btn btn-primary">Subscribe</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card bg-secondary text-light border-0">
+                <div class="card-body">
+                  <h5 class="card-title">Premium Student</h5>
+                  <p class="card-text">
+                    Special discount for students with all Premium features.
+                  </p>
+                  <p class="fw-bold">Rp 27,500/bulan</p>
+                  <button class="btn btn-primary">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Popular Songs -->
+          <h2 class="text-center mb-4">Popular Songs</h2>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card bg-dark text-light">
+                <img
+                  src="img/ftoweb.jpg"
+                  class="card-img-top"
+                  alt="Album Art"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Song 1</h5>
+                  <p class="card-text">Artist Name</p>
+                  <button class="btn btn-success w-100">Play</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card bg-dark text-light">
+                <img
+                  src="img/spotifywebfto.jpg"
+                  class="card-img-top"
+                  alt="Album Art"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Song 2</h5>
+                  <p class="card-text">Artist Name</p>
+                  <button class="btn btn-success w-100">Play</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card bg-dark text-light">
+                <img
+                  src="img/ftoweb3.avif"
+                  class="card-img-top"
+                  alt="Album Art"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Song 3</h5>
+                  <p class="card-text">Artist Name</p>
+                  <button class="btn btn-success w-100">Play</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <body>
+        <div class="container mt-5">
+          <h2 class="text-center">Form Pendaftaran</h2>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nama Lengkap</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Masukkan nama lengkap"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Masukkan email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Kata Sandi</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Masukkan kata sandi"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="confirmPassword" class="form-label"
+                >Konfirmasi Kata Sandi</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPassword"
+                placeholder="Konfirmasi kata sandi"
+                required
+              />
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="terms"
+                required
+              />
+              <label class="form-check-label" for="terms"
+                >Saya setuju dengan syarat dan ketentuan</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Daftar</button>
+          </form>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      </body>
+
+      <footer class="bg-dark text-center text-white py-3 mt-4">
+        <p>&copy; Spotify Felix. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <!-- Bootstrap JS & FontAwesome -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS for Play/Pause Buttons -->
+    <script>
+      document
+        .getElementById("playButton")
+        .addEventListener("click", function () {
+          alert("Music is playing!");
+        });
+
+      document
+        .getElementById("pauseButton")
+        .addEventListener("click", function () {
+          alert("Music is paused!");
+        });
+    </script>
+  </body>
+</html>
